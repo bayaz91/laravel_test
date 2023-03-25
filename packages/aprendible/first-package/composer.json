@@ -1,0 +1,36 @@
+{
+    "name": "aprendible/first-package",
+    "description": "First Package",
+    "authors": [
+        {
+            "name": "Sindy Manage",
+            "email": "sindymanage@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aprendible\\FirstPackage\\":"src/" 
+        },
+        "files":["src/helpers.php"],
+     
+     "minimum-stability" : "stable",  
+     "prefer-stable" : true
+    },   
+    "require-dev": {
+        "phpunit/phpunit": "^8.1",
+        "orchestra/testbench": "v6"
+    },
+    "extra": {
+        "laravel":{    
+            "providers":[
+                "Aprendible\\FirstPackage\\FirstPackageServiceProvider"
+            ],
+           "aliases":{
+            "FirstPackage":"Aprendible\\FirstPackage\\Facades\\FirstPackage"
+           }
+        }
+    }
+}

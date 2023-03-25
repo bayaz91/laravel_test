@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "23a1f2c536dcb2093101ffeec36bf539",
+    "packages": [
+        {
+            "name": "aprendible/first-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../aprendible/first-package",
+                "reference": "4fc6ff639186717575b36e893eb7fa6a36f2ba18"
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apprendible\\FirstPackage\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ],
+                "minimum-stability": "stable",
+                "prefer-stable": true
+            },
+            "authors": [
+                {
+                    "name": "Sindy Manage",
+                    "email": "sindymanage@gmail.com"
+                }
+            ],
+            "description": "First Package",
+            "transport-options": {
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "aprendible/first-package": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
