@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+@include('welcome')
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@ function getval(sel)
     
         <!-- PAGE CONTAINER-->
         <div class="page-container">
-                 @extends('backoffice.menu.nascoheader')
+                 
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
@@ -95,6 +95,8 @@ function getval(sel)
 
                                     <center>      <button style="background: linear-gradient(225deg, #f8c406 10%, #fd6805 90%) ;color: white;" value="{{Lang::get('auth.update')}}" value="{{Lang::get('saide.update')}}" type="submit" class="btn btn-light btn-md">{{Lang::get('saide.edit')}}</button></center>
 									</form>
+
+       @section('content')                             
                                     @if(isset($titles))
 @foreach($titles as $t)
 
@@ -103,15 +105,20 @@ function getval(sel)
 
 @endforeach
 @endif
+
+CONTENT KISMINDA
+@endsection
                                 </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                @section('footer')
                                 <div class="copyright">
                                     <p>© Copyright SAİDE. All Rights Reserved</p>
                                 </div>
+                @endsection
                             </div>
                         </div>
                     </div>
